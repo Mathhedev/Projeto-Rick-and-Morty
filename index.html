@@ -3,17 +3,217 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rick and Morty</title>
-    <meta http-equiv="refresh" content="0; url=characters.html">
-    <script>window.location = 'characters.html';</script>
+    <title>Rick and Morty Compendium</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preload"
+      href="calligraphr.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
   </head>
   <body>
-    <h1>Rick and Morty</h1>
-    <i>"wubba lubba dub dub"</i>
-    <p></p>
-    <ul>
-      <li>Wilbelison</li>
-      <li>Matheus Andrade</li>
-    </ul>
+
+    <header>
+
+      <h2 id="logo"><img src="logo.svg" alt="Rick and Morty" /><br />Compendium</h2>
+
+      <nav id="menu">
+        <ul>
+          <li><a href="#" title="Characters" class="active">Characters</a></li>
+          <li><a href="#" title="Locations">Locations</a></li>
+          <li><a href="#" title="Episodes">Episodes</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+
+    <main>
+
+      <section id="filters">
+
+        <h2>Filters</h2>
+
+        <form>
+          <label for="filter-name">Name</label>
+          <input
+            type="text"
+            id="filter-name"
+            name="filter-name"
+            placeholder="Ex.: Rick Sanchez"
+          />
+          <label for="filter-status">Status</label>
+          <select name="filter-status" id="filter-status">
+            <option value="all" selected>All</option>
+            <option value="alive">Alive</option>
+            <option value="dead">Dead</option>
+            <option value="unknownd">Unknown</option>
+          </select>
+          <label for="filter-specie">Specie</label>
+          <input
+            type="text"
+            id="filter-specie"
+            name="filter-specie"
+            placeholder="Ex.: Alien"
+          />
+          <label for="filter-subspecie">Subspecie</label>
+          <input
+            type="text"
+            id="filter-subspecie"
+            name="filter-subspecie"
+            placeholder="Ex.: Parasite"
+          />
+          <label for="filter-gender">Gender</label>
+          <select name="filter-gender" id="filter-gender">
+            <option value="all" selected>All</option>
+            <option value="femalee">Female</option>
+            <option value="genderless">Genderless</option>
+            <option value="male">Male</option>
+            <option value="unknown">Unknown</option>
+          </select>
+          <input
+            type="submit"
+            name="filters-apply"
+            id="filters-apply"
+            value="Apply filters"
+          />
+          <input
+            type="reset"
+            name="filters-clear"
+            id="filters-clear"
+            value="Clear filters"
+          />
+        </form>
+
+      </section>
+
+      <section id="content">
+        
+        <h1>Characters</h1>
+
+        <div id="characters" class="grid">
+
+          <div class="card">
+            <h3 clas="name">Rick Sanchez</h3>
+            <img
+              class="avatar"
+              src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+            />
+            <ul class="infos">
+              <li>Alive</li>
+              <li>Human</li>
+              <li>Parasite</li>
+              <li>Male</li>
+              <li><a href="#">Earth (C-137)</a></li>
+              <li><a href="#">Citadel of Ricks</a></li>
+              <li><a href="#"># episodes</a></li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 clas="name">Rick Sanchez</h3>
+            <img
+              class="avatar"
+              src="https://rickandmortyapi.com/api/character/avatar/2.jpeg"
+            />
+            <ul class="infos">
+              <li>Alive</li>
+              <li>Human</li>
+              <li>Parasite</li>
+              <li>Male</li>
+              <li><a href="#">Earth (C-137)</a></li>
+              <li><a href="#">Citadel of Ricks</a></li>
+              <li><a href="#"># episodes</a></li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 clas="name">Rick Sanchez</h3>
+            <img
+              class="avatar"
+              src="https://rickandmortyapi.com/api/character/avatar/3.jpeg"
+            />
+            <ul class="infos">
+              <li>Alive</li>
+              <li>Human</li>
+              <li>Parasite</li>
+              <li>Male</li>
+              <li><a href="#">Earth (C-137)</a></li>
+              <li><a href="#">Citadel of Ricks</a></li>
+              <li><a href="#"># episodes</a></li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 clas="name">Rick Sanchez</h3>
+            <img
+              class="avatar"
+              src="https://rickandmortyapi.com/api/character/avatar/4.jpeg"
+            />
+            <ul class="infos">
+              <li>Alive</li>
+              <li>Human</li>
+              <li>Parasite</li>
+              <li>Male</li>
+              <li><a href="#">Earth (C-137)</a></li>
+              <li><a href="#">Citadel of Ricks</a></li>
+              <li><a href="#"># episodes</a></li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 clas="name">Rick Sanchez</h3>
+            <img
+              class="avatar"
+              src="https://rickandmortyapi.com/api/character/avatar/5.jpeg"
+            />
+            <ul class="infos">
+              <li>Alive</li>
+              <li>Human</li>
+              <li>Parasite</li>
+              <li>Male</li>
+              <li><a href="#">Earth (C-137)</a></li>
+              <li><a href="#">Citadel of Ricks</a></li>
+              <li><a href="#"># episodes</a></li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 clas="name">Rick Sanchez</h3>
+            <img
+              class="avatar"
+              src="https://rickandmortyapi.com/api/character/avatar/6.jpeg"
+            />
+            <ul class="infos">
+              <li>Alive</li>
+              <li>Human</li>
+              <li>Parasite</li>
+              <li>Male</li>
+              <li><a href="#">Earth (C-137)</a></li>
+              <li><a href="#">Citadel of Ricks</a></li>
+              <li><a href="#"># episodes</a></li>
+            </ul>
+          </div>
+          
+        </div>
+
+        <form id="pagination">
+          <a href="#" title="previous page"><</a>
+          Page
+          <select name="page" id="page">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          of {#}
+          <a href="#" title="next page">></a>
+        </form>
+
+      </section>
+
+    </main>
+
   </body>
 </html>
